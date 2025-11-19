@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    color: #b9b9fc;
+    background-color: #dcdcff80;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 5px;
+}
+
+main .conteiner-logo {
+    width: fit-content;
+}
+
+main .conteiner-logo img {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #dcdcff80;
+}
+
+main .conteiner-logo img:hover {
+    border: 1px solid;
+    filter: drop-shadow(0 0 100px #b9b9fc);
+    transition: 1s all ease-in-out;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 50px #ababf6);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 100px #ababf6);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 50px #ababf6);
+    }
+}
+
+main h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main .conteiner-form {
+    width: 70%;
+}
+
+main .conteiner-form form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .conteiner-form form label {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .conteiner-form form label input {
+    text-align: center;
+    color: #dcdcff80;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 25px;
+}
+
+main .conteiner-form form label input:focus {
+    border-style: none;
+}
+
+main .conteiner-form form label input:hover {
+    border: 1px solid #b9b9fc;
+    transition: 0.5s all ease;
+}
+
+main .conteiner-form form label input::placeholder {
+    text-align: center;
+    color: #dcdcff80;
+    padding: 5px;
+}
+
+main .conteiner-form form label input#classe {
+    overflow-y: hidden;
+}
+
+main .conteiner-form form fieldset {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+}
+
+main .conteiner-form form fieldset button {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dcdcff80;
+    color: #b9b9fc;
+    padding: 5px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+
+main .conteiner-form form fieldset button a {
+    text-decoration: none;
+    color: #b9b9fc;
+}
+
+main .conteiner-form form fieldset button:hover {
+    background-color: #b9b9fc;
+    border: 1px solid #b9b9fc;
+    color: #dcdcff80;
+    transition: 1s all ease-in-out;
+}
+
+main .conteiner-form form fieldset button a:hover {
+    color: #dcdcff80;
+    transition: 1s all ease-in-out;
+}
+
+main .conteiner-form form fieldset button a:visited {
+    color: #b9b9fc;
+    transition: 1s all ease-in-out;
+}
+
+span {
+    width: 100%;
+}
+
+span a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+span a abbr{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+span a abbr img {
+    width: 25%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: blur(2px);
+}
+
+span a  img:hover {
+    background-color: #b9b9fc;
+    transition: 1s all ease-in-out;
+    filter: blur(0px);
+}
+
+
+@media screen and (max-width:600px) {
+    main h1 {
+        padding-bottom: 5px;
+    }
+
+    main .conteiner-logo img {
+        width: 100%;
+        height: 100px;
+    }
+
+    main .conteiner-form {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    main .conteiner-form form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    main .conteiner-form form label {
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    main .conteiner-form form label input {
+        width: 100%;
+        height: 20px;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    main .conteiner-form {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:901px) {
+    main .conteiner-form {
+        width: 40%;
+    }
+}

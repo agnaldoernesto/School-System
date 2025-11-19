@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcff80;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b9b9fc;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    height: 150px;
+    width: 100%;
+    font-size: 55pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b9b9fc;
+    flex-wrap: wrap;
+}
+
+header h1 span {
+    width: 100%;
+    font-size: 18pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(90deg, #dcdcff80 ,  #b9b9fca0 40%, #dcdcff80 );
+    color: #b9b9fc;
+    border-radius: 5px;
+}
+
+#intro {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#intro h2 {
+    width: 100%;
+    color: #b9b9fc;
+    font-size: 20pt;
+    padding: 10px 0;
+}
+
+#intro  p {
+    font-size: 18pt;
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    align-items: center;
+    color: #b9b9fc;
+}
+
+section {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+section .cards {
+    width: 33%;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #dcdcff80;
+    margin: 1px auto;
+}
+
+section .cards img {
+    border-radius: 20px;
+    width: 39%;
+}
+
+section .cards img:hover {
+    box-shadow: 0 0 20px #b9b9fc;
+    transition: all 1s ease-in-out;
+}
+section .cards a {
+    width: fit-content;
+    text-decoration: none;
+    color: #b9b9fc;
+    margin: auto;
+}
+
+section .cards a h3 {
+    width: fit-content;
+    margin: auto;
+}
+
+section .cards:hover {
+    box-shadow: 0 0 10px #b9b9fc;
+    transition: all 1s ease-in-out;
+}
+
+
+
+span a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+span a abbr{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+span a abbr img {
+    width: 25%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: blur(2px);
+}
+
+span a  img:hover {
+    background-color: #b9b9fc;
+    transition: 1s all ease-in-out;
+    filter: blur(0px);
+}
+
+
+
+@media screen and (max-width:677px){
+    section .cards {
+        width: 100%;
+        margin: 2px auto;
+    }
+    
+    section .cards img {
+        width: 15%;
+    }
+    section .cards img:hover {
+        box-shadow: none;
+    }
+}
+@media screen and (min-width:678px) and (max-width:987px){
+    section .cards {
+        width: 49.9%;
+        margin: 2px auto;
+    }
+    
+    section .cards img:hover {
+        box-shadow: none;
+    }
+}
+@media screen and (min-width:988px){
+    body {
+        overflow: hidden;
+    }
+}
