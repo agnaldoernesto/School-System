@@ -18,7 +18,7 @@ A lightweight, web-based School Management System designed to streamline academi
 
 * **PHP:** Core server-side scripting.
 * **Hack:** Used for type-safe server-side logic.
-* **MySQL:** Database management system.
+* **MySQLI:** Database management system.
 * **phpMyAdmin:** Web interface for database administration.
 * **CSS3 & JavaScript:** Frontend styling and interactivity.
 
